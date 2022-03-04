@@ -7,9 +7,8 @@ export default function ImageSlider() {
       <Image
         alt="photo from instagram api"
         src="/img-mobile.png"
-        width="100%"
-        height="100%"
-        objectFit="contain"
+        width={347.81}
+        height={182.95}
       />
     </div>
   );

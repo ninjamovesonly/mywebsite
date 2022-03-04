@@ -31,3 +31,29 @@ a {
   background-color: black;
   color: white;
 }
+
+.btn {
+  padding: 0.5em 2.5em;
+  border-radius: 5em;
+}
+
+.btn-light {
+  background-color: black;
+  color: white;
+}
+
+.btn-dark {
+  background-color: white;
+  color: black;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+}
+
+.smi-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}

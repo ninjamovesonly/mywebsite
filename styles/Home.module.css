@@ -87,18 +87,11 @@ input:checked + .slider:before {
   width: 100%;
 }
 
-.image {
-  object-fit: contain;
-  width: 100% !important;
-  position: relative !important;
-  height: unset !important;
-}
-
-/* .slider-container {
+.slider-container {
   position: relative;
   width: 100%;
   width: 100%;
-} */
+}
 
 .slider-container > div {
   position: unset !important;
@@ -129,4 +122,17 @@ input:checked + .slider:before {
 
 .pomodoro-timer-button {
   background-color: white;
+}
+
+.cover-letter-container {
+  padding: 1em;
+}
+
+.projects-container {
+  padding: 1em;
+}
+
+.project-item-conteiner {
+  padding: 1em;
+  border: 1px solid #ececec;
 }

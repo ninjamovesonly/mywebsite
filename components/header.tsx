@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { useAppContext } from "../context/state";
 import styles from "../styles/Home.module.css";
 import ToggleSwitch from "./toggle";
 
 export default function HeaderContainer() {
-  const theme = "light";
+  const { theme }: any = useAppContext();
 
   return (
     <section className={styles.header}>

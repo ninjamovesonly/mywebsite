@@ -1,4 +1,3 @@
-import { useState } from "react";
 import HeaderContainer from "./header";
 import BodyContainer from "./body";
 import FooterContainer from "./footer";

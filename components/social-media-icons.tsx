@@ -5,7 +5,7 @@ export default function SocialMediaIcons() {
   const { theme }: any = useAppContext();
 
   return (
-    <>
+    <div className="smi-container">
       <Image
         alt="link to leetcode"
         src={`/${theme}/leetcode.svg`}
@@ -42,6 +42,6 @@ export default function SocialMediaIcons() {
         width={38.1}
         height={40}
       />
-    </>
+    </div>
   );
 }

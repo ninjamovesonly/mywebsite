@@ -56,3 +56,54 @@ a {
   justify-content: space-around;
   padding: 1em;
 }
+
+.pomodoro-timer-box {
+  display: block;
+  width: 100%;
+  padding: 5em 2em;
+  margin: 7rem 0;
+  text-align: center;
+}
+
+.pomodoro-timer-box-light {
+  color: white;
+  background-color: black;
+}
+
+.pomodoro-timer-box-dark {
+  color: black;
+  background-color: white;
+}
+
+.pomodoro-button-light {
+  background-color: white;
+  padding: 0.7em 1.5em;
+  color: black;
+  border-radius: 5em;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 70%;
+  margin: 0 15%;
+}
+
+.pomodoro-button-dark {
+  background-color: black;
+  padding: 0.7em 1.5em;
+  color: white;
+  border-radius: 5em;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  width: 70%;
+  margin: 0 15%;
+}
+
+.pomodoro-timer-text {
+  font-size: 5em;
+  margin: 15px 0;
+}
+
+.pomodoro-app-container {
+  height: 100vh;
+}

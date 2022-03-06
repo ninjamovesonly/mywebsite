@@ -7,8 +7,6 @@ export default function ProgressBar({
   currentTime: number;
   totalTime: number;
 }) {
-  // revisit this and style first
-
   const totatTimeCalculation = (time: number) => {
     if ((time = 25)) {
       return "100%";

@@ -24,7 +24,11 @@ export default function ToggleSwitch() {
   return (
     <>
       <label className={styles.switch}>
-        <input type="checkbox" onClick={() => toggleThemeColor()}></input>
+        <input
+          type="checkbox"
+          defaultChecked={theme === THEME_COLORS.dark ? true : false}
+          onClick={() => toggleThemeColor()}
+        ></input>
         <span className={`${styles.slider} ${styles.round}`}></span>
       </label>
       <span>

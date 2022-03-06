@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { useAppContext } from "../context/state";
 
-export default function StartPomodoroTimerButton() {
-  const { theme }: any = useAppContext();
-
+const Button = ({ theme, label }: any) => {
   return (
     <div className={`pomodoro-button-${theme}`}>
       <Image
@@ -12,7 +10,16 @@ export default function StartPomodoroTimerButton() {
         width={22}
         height={24}
       />
-      <span>Start to Focus</span>
+      <span>{label}</span>
     </div>
+  );
+};
+
+export default function StartPomodoroTimerButton({ label }: any) {
+  const { theme }: any = useAppContext();
+
+  return (
+    // { theme && <Button />}
+    <Button theme={theme} />
   );
 }

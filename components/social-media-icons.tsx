@@ -13,8 +13,8 @@ export default function SocialMediaIcons() {
         height={40}
       />
       <Image
-        alt="link to medium"
-        src={`/${theme}/medium.svg`}
+        alt="link to instagram"
+        src={`/${theme}/instagram.svg`}
         width={38.1}
         height={40}
       />

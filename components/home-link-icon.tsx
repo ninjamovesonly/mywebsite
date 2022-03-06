@@ -1,7 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function HomeLinkIcon() {
   return (
-    <Image alt="meduim icon" src={`/homeicon.svg`} width={90} height={90} />
+    <>
+      <Link href="/" passHref>
+        <Image alt="home icon" src={`/homeicon.svg`} width={90} height={90} />
+      </Link>
+    </>
   );
 }

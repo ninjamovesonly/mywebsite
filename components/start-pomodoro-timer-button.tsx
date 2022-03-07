@@ -20,8 +20,5 @@ export default function StartPomodoroTimerButton({
   label,
   handleClick,
 }: PomodoroTimerButtonProps) {
-  return (
-    // { theme && <Button />}
-    <Button theme={theme} label={label} handleClick={handleClick} />
-  );
+  return <Button theme={theme} label={label} handleClick={handleClick} />;
 }

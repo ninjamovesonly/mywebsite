@@ -1,10 +1,4 @@
-import {
-  POMODORO_TIME_STATUS,
-  DEFAULT_TIME_INTERVAL,
-  HOUR,
-  MINUTES,
-  SECONDS,
-} from "./consts";
+import { DEFAULT_TIME_INTERVAL, HOUR, MINUTES, SECONDS } from "./consts";
 
 export default class PomodoroTimer {
   _interval: number | undefined;

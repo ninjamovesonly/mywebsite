@@ -1,34 +1,35 @@
-import { POMODORO_TIME_STATUS, DEFAULT_TIME_INTERVAL } from "./consts";
+import {
+  POMODORO_TIME_STATUS,
+  DEFAULT_TIME_INTERVAL,
+  HOUR,
+  MINUTES,
+  SECONDS,
+} from "./consts";
 
 export default class PomodoroTimer {
-  cycles: number;
-  status: string;
-  _timerInterval: number;
   _interval: number | undefined;
 
-  constructor() {
-    this.cycles = 0;
-    this.status = POMODORO_TIME_STATUS.IDLE;
-    this._timerInterval = DEFAULT_TIME_INTERVAL;
-  }
+  constructor() {}
 
-  get currentTime() {
-    return 25;
-  }
+  start(callback: (m: number, s: number) => void) {
+    let timeDifference = 25;
 
-  get totalTime() {
-    return 25;
-  }
+    const endTime = new Date(Date.now() + timeDifference * MINUTES).getTime();
 
-  start(time: number) {
-    if ("reached" == "reached") {
-      clearInterval(this._interval);
-    }
+    this._interval = window.setInterval(() => {
+      let now = new Date().getTime();
 
-    this._interval = setInterval(
-      this._countDown(time, time),
-      this._timerInterval
-    );
+      let distance = endTime - now;
+
+      let minute = Math.floor((distance % HOUR) / MINUTES);
+      let second = Math.floor((distance % MINUTES) / SECONDS);
+
+      if (distance === 0) {
+        clearInterval(this._interval);
+      } else {
+        callback(minute, second);
+      }
+    }, DEFAULT_TIME_INTERVAL);
   }
 
   end() {

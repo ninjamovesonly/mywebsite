@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { useAppContext } from "../context/state";
+import { PomodoroTimerButtonProps } from "../types/pomodoro-timer";
 
-const Button = ({ theme, label }: any) => {
+const Button = ({ theme, label, handleClick }: PomodoroTimerButtonProps) => {
   return (
-    <div className={`pomodoro-button-${theme}`}>
+    <div className={`pomodoro-button-${theme}`} onClick={handleClick}>
       <Image
         alt="link to leetcode"
         src={`/${theme}/play-button.svg`}
@@ -15,11 +15,13 @@ const Button = ({ theme, label }: any) => {
   );
 };
 
-export default function StartPomodoroTimerButton({ label }: any) {
-  const { theme }: any = useAppContext();
-
+export default function StartPomodoroTimerButton({
+  theme,
+  label,
+  handleClick,
+}: PomodoroTimerButtonProps) {
   return (
     // { theme && <Button />}
-    <Button theme={theme} />
+    <Button theme={theme} label={label} handleClick={handleClick} />
   );
 }

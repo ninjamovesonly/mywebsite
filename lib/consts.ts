@@ -17,3 +17,7 @@ export const POMODORO_TIME_LABELS = {
 };
 
 export const DEFAULT_TIME_INTERVAL = 1000;
+
+export const SECONDS = 1000;
+export const MINUTES = SECONDS * 60;
+export const HOUR = MINUTES * 60;

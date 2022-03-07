@@ -4,10 +4,10 @@ export default function ProgressBar({
   currentTime,
   totalTime,
 }: {
-  currentTime: number;
-  totalTime: number;
+  currentTime: number | string;
+  totalTime: number | string;
 }) {
-  const totatTimeCalculation = (time: number) => {
+  const totatTimeCalculation = (time: number | string) => {
     if ((time = 25)) {
       return "100%";
     }

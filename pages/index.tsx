@@ -11,8 +11,8 @@ const Home: NextPage = () => {
   return (
     <div className={`app-container ${theme}`}>
       <Head>
-        <title>Homepage</title>
-        <meta name="description" content="I am Ninja!" />
+        <title>Nedu</title>
+        <meta name="description" content="Ninja moves only" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 

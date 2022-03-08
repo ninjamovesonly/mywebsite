@@ -2,6 +2,7 @@ import { useMemo, useState } from "react";
 
 import ProgressBar from "./progress-bar";
 import StartPomodoroTimerButton from "./start-pomodoro-timer-button";
+import StopPomodoroTimerButton from "./stop-button";
 import { useAppContext } from "../context/state";
 import Pomodoro from "../lib/pomodoro-timer";
 
@@ -86,7 +87,13 @@ export default function PomodoroTimer() {
         theme={theme}
         label={label}
       />
-      <button onClick={() => stopInterval()}>End</button>
+
+      {status === POMODORO_TIME_STATUS.ACTIVE && (
+        <>
+          <br />
+          <StopPomodoroTimerButton handleClick={handleClick} theme={theme} />
+        </>
+      )}
     </div>
   );
 }

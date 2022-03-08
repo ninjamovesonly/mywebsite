@@ -1,15 +1,29 @@
 import Image from "next/image";
 import { PomodoroTimerButtonProps } from "../types/pomodoro-timer";
+import { POMODORO_TIME_LABELS } from "../lib/consts";
 
 const Button = ({ theme, label, handleClick }: PomodoroTimerButtonProps) => {
   return (
     <div className={`pomodoro-button-${theme}`} onClick={handleClick}>
-      <Image
-        alt="link to leetcode"
-        src={`/${theme}/play-button.svg`}
-        width={22}
-        height={24}
-      />
+      {(label === POMODORO_TIME_LABELS.START_TO_FOCUS ||
+        label === POMODORO_TIME_LABELS.CONTINUE) && (
+        <Image
+          alt="link to leetcode"
+          src={`/${theme}/play-button.svg`}
+          width={22}
+          height={24}
+        />
+      )}
+
+      {label === POMODORO_TIME_LABELS.PAUSE && (
+        <Image
+          alt="link to leetcode"
+          src={`/${theme}/pause-button.svg`}
+          width={22}
+          height={24}
+        />
+      )}
+
       <span>{label}</span>
     </div>
   );

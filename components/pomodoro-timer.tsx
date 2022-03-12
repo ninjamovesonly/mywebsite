@@ -29,10 +29,8 @@ export default function PomodoroTimer() {
   };
 
   const handleClick = () => {
-    console.log("clicked..", label);
     switch (label) {
       case POMODORO_TIME_LABELS.START_TO_FOCUS: {
-        console.log("clicked: ", POMODORO_TIME_LABELS.START_TO_FOCUS);
         setStatus(POMODORO_TIME_STATUS.ACTIVE);
         setLabel(POMODORO_TIME_LABELS.PAUSE);
 
@@ -42,7 +40,6 @@ export default function PomodoroTimer() {
       }
 
       case POMODORO_TIME_LABELS.PAUSE: {
-        console.log("clicked: ", POMODORO_TIME_LABELS.PAUSE);
         if (status === POMODORO_TIME_STATUS.ACTIVE) {
           setStatus(POMODORO_TIME_STATUS.PAUSED);
           setLabel(POMODORO_TIME_LABELS.CONTINUE);
@@ -51,28 +48,26 @@ export default function PomodoroTimer() {
         }
       }
 
-      case POMODORO_TIME_LABELS.STOP: {
-        console.log("clicked: ", POMODORO_TIME_LABELS.STOP);
-        setStatus(POMODORO_TIME_STATUS.IDLE);
-        setLabel(POMODORO_TIME_LABELS.START_TO_FOCUS);
-
-        return pomodoro.end();
-      }
-
       case POMODORO_TIME_LABELS.CONTINUE: {
-        console.log("clicked: ", POMODORO_TIME_LABELS.CONTINUE);
         if (status === POMODORO_TIME_STATUS.PAUSED) {
           setStatus(POMODORO_TIME_STATUS.ACTIVE);
           setLabel(POMODORO_TIME_LABELS.PAUSE);
 
-          return pomodoro.continue();
+          return pomodoro.continue((minute, second) =>
+            updateCountdown(minute, second)
+          );
         }
       }
     }
   };
 
-  const stopInterval = () => {
-    pomodoro.end();
+  const stopTimer = () => {
+    setStatus(POMODORO_TIME_STATUS.IDLE);
+    setLabel(POMODORO_TIME_LABELS.START_TO_FOCUS);
+    setRemainingMinute(25);
+    setRemainingSecond("00");
+
+    return pomodoro.end();
   };
 
   return (
@@ -91,7 +86,7 @@ export default function PomodoroTimer() {
       {status === POMODORO_TIME_STATUS.ACTIVE && (
         <>
           <br />
-          <StopPomodoroTimerButton handleClick={handleClick} theme={theme} />
+          <StopPomodoroTimerButton handleClick={stopTimer} theme={theme} />
         </>
       )}
     </div>

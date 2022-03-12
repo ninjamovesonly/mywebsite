@@ -8,7 +8,7 @@ const Button = ({ theme, label, handleClick }: PomodoroTimerButtonProps) => {
       {(label === POMODORO_TIME_LABELS.START_TO_FOCUS ||
         label === POMODORO_TIME_LABELS.CONTINUE) && (
         <Image
-          alt="link to leetcode"
+          alt="play button"
           src={`/${theme}/play-button.svg`}
           width={22}
           height={24}
@@ -17,7 +17,7 @@ const Button = ({ theme, label, handleClick }: PomodoroTimerButtonProps) => {
 
       {label === POMODORO_TIME_LABELS.PAUSE && (
         <Image
-          alt="link to leetcode"
+          alt="pause button"
           src={`/${theme}/pause-button.svg`}
           width={22}
           height={24}

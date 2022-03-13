@@ -19,7 +19,7 @@ export default function ProgressBar({
     <div className={styles["progress-bar-box"]} style={{ width: "100%" }}>
       <div
         className={styles["progress-bar-timer"]}
-        style={{ width: `${calculatePercentage()}%` }}
+        style={{ width: `${calculatePercentage() || 0}%` }}
       ></div>
     </div>
   );

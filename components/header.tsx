@@ -21,6 +21,9 @@ export default function HeaderContainer() {
           src={`/${theme}/medium.svg`}
           width={30}
           height={30}
+          onClick={() => {
+            window.open("https://medium.com/@MrAbalogu_", "_blank")?.focus();
+          }}
         />
       </div>
     </section>

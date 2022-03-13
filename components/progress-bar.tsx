@@ -1,28 +1,24 @@
 import styles from "../styles/Home.module.css";
 
 export default function ProgressBar({
-  currentTime,
-  totalTime,
+  startTime,
+  endTime,
 }: {
-  currentTime: number | string;
-  totalTime: number | string;
+  startTime: number;
+  endTime: number;
 }) {
-  const totatTimeCalculation = (time: number | string) => {
-    if ((time = 25)) {
-      return "100%";
-    }
+  const calculatePercentage = () => {
+    let currentTime = new Date(Date.now()).getTime();
 
-    return "100%";
+    let per = Math.round((currentTime / endTime) * 100);
+    return per;
   };
 
   return (
-    <div
-      className={styles["progress-bar-box"]}
-      style={{ width: `${totatTimeCalculation(totalTime)}` }}
-    >
+    <div className={styles["progress-bar-box"]} style={{ width: "100%" }}>
       <div
         className={styles["progress-bar-timer"]}
-        style={{ width: `${currentTime}` }}
+        style={{ width: `${calculatePercentage()}%` }}
       ></div>
     </div>
   );

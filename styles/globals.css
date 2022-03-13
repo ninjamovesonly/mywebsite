@@ -59,7 +59,7 @@ a {
 
 .pomodoro-timer-box {
   display: block;
-  width: 100%;
+  /* width: 100%; */
   padding: 5em 2em;
   margin: 7rem 0;
   text-align: center;
@@ -130,5 +130,10 @@ a {
   .smi-container {
     width: 20rem;
     float: right;
+  }
+
+  .pomodoro-timer-box {
+    margin: 7rem 30rem;
+    padding: 4rem;
   }
 }

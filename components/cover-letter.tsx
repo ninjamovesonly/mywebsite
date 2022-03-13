@@ -7,7 +7,7 @@ export default function CoverLetter() {
   }: any = useAppContext();
 
   return (
-    <div className={styles["cover-letter-container"]}>
+    <div className={`${styles["cover-letter-container"]} ic-second`}>
       <p>
         Chinedu <b>Prince</b> Abalogu
       </p>

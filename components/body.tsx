@@ -6,8 +6,10 @@ import Button from "./button";
 export default function Body() {
   return (
     <section>
-      <ImageSlider />
-      <CoverLetter />
+      <div className="image-coverletter-container">
+        <ImageSlider />
+        <CoverLetter />
+      </div>
       <Projects />
       <Button label="resume / cv" />
     </section>

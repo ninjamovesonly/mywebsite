@@ -109,3 +109,26 @@ a {
 .pomodoro-app-container {
   height: 100vh;
 }
+
+@media (min-width: 700px) {
+  .image-coverletter-container {
+    display: flex;
+  }
+
+  .image-coverletter-container .ic-first {
+    order: 2;
+  }
+
+  .image-coverletter-container .ic-second {
+    order: 1;
+  }
+
+  .home-container {
+    padding: 1em 6em;
+  }
+
+  .smi-container {
+    width: 20rem;
+    float: right;
+  }
+}

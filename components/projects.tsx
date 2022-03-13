@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { useAppContext } from "../context/state";
 import ProjectItem from "./project-item";
 import styles from "../styles/Home.module.css";

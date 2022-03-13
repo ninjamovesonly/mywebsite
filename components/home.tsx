@@ -6,10 +6,10 @@ export default function Home() {
   const page = "home";
 
   return (
-    <>
+    <div className="home-container">
       <HeaderContainer />
       <BodyContainer />
       <FooterContainer page={page} />
-    </>
+    </div>
   );
 }

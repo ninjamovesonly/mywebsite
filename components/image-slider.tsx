@@ -3,7 +3,7 @@ import styles from "../styles/Home.module.css";
 
 export default function ImageSlider() {
   return (
-    <div className={styles["slider-container"]}>
+    <div className={`${styles["slider-container"]} ic-first`}>
       <Image
         alt="photo from instagram api"
         src="/img-mobile.png"

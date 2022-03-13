@@ -7,35 +7,41 @@ export default class PomodoroTimer {
   _minute: number;
   _second: number;
   _endTime: number;
+  _startTime: number;
   _pausedAt: number | undefined;
   _continuedAt: number | undefined;
   _started: boolean;
+  _status: string;
 
   constructor() {
     this._minute = 0;
     this._second = 0;
-    this._endTime = new Date().getTime();
+    this._startTime = new Date(Date.now()).getTime();
+    this._endTime = new Date(Date.now()).getTime();
     this._pausedAt = undefined;
     this._continuedAt = undefined;
     this._started = false;
+    this._status = "focus";
   }
 
   start(callback: (m: number, s: number) => void) {
     if (!this._started) {
+      this._startTime = new Date(Date.now()).getTime();
       this._endTime = new Date(Date.now() + DEFAULT_TIME * MINUTES).getTime();
 
       this._started = true;
     }
 
     this._interval = window.setInterval(() => {
-      let now = new Date().getTime();
+      let now = new Date(Date.now()).getTime();
 
       let distance = this._endTime - now;
 
-      this._minute = Math.ceil((distance % HOUR) / MINUTES);
+      this._minute = Math.floor((distance % HOUR) / MINUTES);
       this._second = Math.ceil((distance % MINUTES) / SECONDS);
 
-      if (distance === 0) {
+      if (this._minute === -1 && this._second === -0) {
+        callback(0, this._second);
         clearInterval(this._interval);
       } else {
         callback(this._minute, this._second);
@@ -44,12 +50,12 @@ export default class PomodoroTimer {
   }
 
   pause() {
-    this._pausedAt = new Date().getTime();
+    this._pausedAt = new Date(Date.now()).getTime();
     clearInterval(this._interval);
   }
 
   end() {
-    this._endTime = new Date().getTime();
+    this._endTime = new Date(Date.now()).getTime();
     this._pausedAt = undefined;
     this._continuedAt = undefined;
     this._started = false;
@@ -57,14 +63,12 @@ export default class PomodoroTimer {
   }
 
   continue(callback: (m: number, s: number) => void) {
-    this._continuedAt = new Date().getTime();
+    this._continuedAt = new Date(Date.now()).getTime();
     if (this._pausedAt) {
-      this._endTime = this._endTime + (this._continuedAt - this._pausedAt);
+      const toAdd = this._continuedAt - this._pausedAt;
+      this._endTime = this._endTime + toAdd;
+      this._startTime = this._startTime + toAdd;
     }
     this.start((m: number, s: number) => callback(m, s));
-  }
-
-  _countDown(startTime: Date, endTime: Date) {
-    return `${startTime} - ${endTime}`;
   }
 }

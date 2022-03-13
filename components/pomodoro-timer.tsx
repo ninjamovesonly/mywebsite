@@ -16,12 +16,19 @@ export default function PomodoroTimer() {
   const { theme }: any = useAppContext();
   const pomodoro = useMemo(() => new Pomodoro(), []);
 
+  const endTimer = () => {
+    setStatus(POMODORO_TIME_STATUS.IDLE);
+    setLabel(POMODORO_TIME_LABELS.START_TO_FOCUS);
+    setRemainingMinute(25);
+    setRemainingSecond("00");
+  };
+
   const updateCountdown = (m: number, s: number) => {
     let minutes: number | string = m;
     let seconds: number | string = s;
 
     if (seconds < 10) {
-      seconds = `0${seconds}`;
+      seconds = `0${Math.abs(seconds)}`;
     }
 
     setRemainingMinute(minutes);
@@ -62,17 +69,17 @@ export default function PomodoroTimer() {
   };
 
   const stopTimer = () => {
-    setStatus(POMODORO_TIME_STATUS.IDLE);
-    setLabel(POMODORO_TIME_LABELS.START_TO_FOCUS);
-    setRemainingMinute(25);
-    setRemainingSecond("00");
+    endTimer();
 
     return pomodoro.end();
   };
 
   return (
     <div className={`pomodoro-timer-box pomodoro-timer-box-${theme}`}>
-      <ProgressBar currentTime={remainingMinute} totalTime={remainingSecond} />
+      <ProgressBar
+        startTime={pomodoro._startTime}
+        endTime={pomodoro._endTime}
+      />
       <h2 className="pomodoro-timer-text">
         {remainingMinute}:{remainingSecond}
       </h2>

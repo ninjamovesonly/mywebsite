@@ -133,6 +133,7 @@ a {
   }
 
   .pomodoro-timer-box {
-    margin: 7rem 25rem;
+    margin: 7rem 30rem;
+    padding: 4rem;
   }
 }

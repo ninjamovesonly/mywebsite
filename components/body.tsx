@@ -11,7 +11,10 @@ export default function Body() {
         <CoverLetter />
       </div>
       <Projects />
-      <Button label="resume / cv" />
+      <Button
+        label="resume / cv"
+        link="https://docs.google.com/document/d/e/2PACX-1vT4kIHTKYdu0ThfKOCxaifR8lTxYRoh9JBWU5KaCBhiqmr37Qxx0I3l6bcWboVHA1Yeq8RRntShQtf4/pub"
+      />
     </section>
   );
 }

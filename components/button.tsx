@@ -1,6 +1,6 @@
 import { useAppContext } from "../context/state";
 
-export default function Button({ label }: any) {
+export default function Button({ label, link }: any) {
   const { theme }: any = useAppContext();
 
   return (
@@ -8,12 +8,7 @@ export default function Button({ label }: any) {
       <button
         className={`btn-${theme} btn`}
         onClick={() => {
-          window
-            .open(
-              "https://drive.google.com/file/d/1hovw3HlbeyZMabPtEQNZ4XlyajS6axVm/view?usp=sharing",
-              "_blank"
-            )
-            ?.focus();
+          window.open(`${link}`, "_blank")?.focus();
         }}
       >
         {label}

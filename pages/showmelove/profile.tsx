@@ -1,10 +1,10 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { useAppContext } from "../context/state";
-import ShowMeLove from "../components/show-me-love";
+import { useAppContext } from "../../context/state";
+import ShowMeLove from "../../components/show-me-love/profile";
 
-const Pomodoro: NextPage = () => {
+const Profile: NextPage = () => {
   const { theme }: any = useAppContext();
 
   return (
@@ -22,4 +22,4 @@ const Pomodoro: NextPage = () => {
   );
 };
 
-export default Pomodoro;
+export default Profile;

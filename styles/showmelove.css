@@ -1,0 +1,121 @@
+.showmelove-header {
+  width: 100%;
+  display: flex;
+  padding: 0.7em 1.5em;
+}
+
+.share-btn-container {
+  margin-left: auto;
+  box-shadow: 0 8px 18px -6px rgb(24 39 75 / 12%),
+    0 12px 42px -4px rgb(24 39 75 / 12%);
+  width: 2em;
+  padding: 0.4em;
+  border-radius: 50%;
+}
+
+.sml-body-container {
+  width: 100%;
+}
+
+.sml-profilepicture-box {
+  text-align: center;
+}
+
+.sml-profilepicture {
+  border-radius: 50%;
+}
+
+.sml-body-container p {
+  width: 100%;
+  text-align: center;
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.sml-body-container hr {
+  border: 1px solid #e6e6e6;
+}
+
+.sml-body-container span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+
+.sml-support-container {
+  width: 100%;
+  padding: 1em;
+}
+
+.sml-support-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.sml-support-container form input {
+  padding: 1em;
+  border: 1px solid #e6e6e6;
+  margin: 0.4em 0;
+}
+
+.sml-support-container form textarea {
+  padding: 1em;
+  height: 7em;
+  border: 1px solid #e6e6e6;
+  margin: 0.4em 0;
+}
+
+.sml-support-container form button {
+  padding: 1em;
+  border: 1px solid #e6e6e6;
+  margin: 0.4em 0;
+  background-color: #27ae60;
+  color: white;
+  font-weight: 600;
+}
+
+.sml-website-box {
+  border: 1px solid #e6e6e6;
+  padding: 2em;
+}
+
+.sml-website-box p {
+  font-size: 1em;
+  text-align: left;
+  margin: 0 0 1em;
+}
+
+.sml-footer {
+  width: 100%;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.sml-footer a:hover {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+@media (min-width: 700px) {
+  .sml-body-layout {
+    display: flex;
+    padding: 1rem 8rem;
+  }
+
+  .sml-body-layout .sbl-first {
+    order: 2;
+    flex-grow: 1;
+  }
+
+  .sml-body-layout .sbl-second {
+    order: 1;
+    flex-grow: 2;
+    padding: 3rem;
+  }
+
+  .sml-body-container span {
+    margin: 0;
+  }
+}

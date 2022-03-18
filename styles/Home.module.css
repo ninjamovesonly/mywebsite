@@ -137,12 +137,3 @@ input:checked + .slider:before {
 .cover-letter-container {
   padding: 1em;
 }
-
-.projects-container {
-  padding: 1em;
-}
-
-.project-item-conteiner {
-  padding: 1em;
-  border: 1px solid #ececec;
-}

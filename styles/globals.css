@@ -110,6 +110,23 @@ a {
   height: 100vh;
 }
 
+.projects-container {
+  padding: 1em;
+}
+
+.project-item-container {
+  padding: 1em;
+  border: 1px solid #ececec;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+.project-item-container:hover {
+  background-color: #ececec;
+  border-radius: 5px;
+  padding: 1em;
+}
+
 @media (min-width: 700px) {
   .image-coverletter-container {
     display: flex;

@@ -1,7 +1,10 @@
+import Project from "./project";
+
 export default function ProjectLinks() {
   return (
     <div>
-      <span>Project links</span>
+      <span>Projects</span>
+      <Project />
     </div>
   );
 }

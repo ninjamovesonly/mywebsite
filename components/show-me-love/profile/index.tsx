@@ -6,7 +6,7 @@ export default function ShowMeLove() {
   return (
     <>
       <Header index={false} />
-      <Body />
+      <Body index={false} />
       <Footer index={false} />
     </>
   );

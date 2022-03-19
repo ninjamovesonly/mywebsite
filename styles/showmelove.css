@@ -8,9 +8,10 @@
   margin-left: auto;
   box-shadow: 0 8px 18px -6px rgb(24 39 75 / 12%),
     0 12px 42px -4px rgb(24 39 75 / 12%);
-  width: 2em;
-  padding: 0.4em;
+  width: 3em;
+  padding: 0.6em;
   border-radius: 50%;
+  text-align: center;
 }
 
 .sml-body-container {
@@ -208,5 +209,61 @@
 
   .sml-body-container span {
     margin: 0;
+  }
+
+  .sml-landing-flex {
+    display: flex;
+    margin: 1rem 5rem;
+  }
+
+  .sml-landing-img-container {
+    order: 2;
+  }
+
+  .sml-landing-caption {
+    order: 1;
+    text-align: left;
+    font-size: 3em;
+    padding: 0 0 0 10rem;
+  }
+
+  .smp-input-container {
+    width: 60%;
+    margin: 0 20%;
+    position: relative;
+  }
+
+  .sml-startpage-input-container {
+    width: 100%;
+    padding: 1.5em 3em;
+  }
+
+  .startpage-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20em;
+    font-size: 0.95em;
+    margin: 5px 0.5em;
+  }
+
+  .startpage-input {
+    width: 20em;
+  }
+
+  .accept-donations-landing {
+    margin: 4em 0;
+  }
+
+  .sml-header-container {
+    padding: 2em 10em;
+  }
+
+  .theidea-span {
+    cursor: pointer;
+  }
+
+  .theidea-span:hover {
+    font-weight: 600;
   }
 }

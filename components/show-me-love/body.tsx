@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ProfileBody from "./profile/body";
+import ProfileBody from "./profile/profile-body";
 import { SmlBodyProps } from "../../types/show-me-love";
 
 function HomeBody() {
@@ -13,24 +13,28 @@ function HomeBody() {
         , not for businesses.
       </p>
 
-      <div className="sml-landing-img-container">
-        <Image
-          alt="Oga show love gif"
-          src="/sml/twale.gif"
-          width={315}
-          height={160}
-        />
-      </div>
+      <div className="sml-landing-flex">
+        <div className="sml-landing-img-container">
+          <Image
+            alt="Oga show love gif"
+            src="/sml/twale.gif"
+            width={315}
+            height={160}
+          />
+        </div>
 
-      <div className="sml-landing-caption">
-        <p className="show-love-text">
-          <b>Oga show love na!</b>
-        </p>
-        <p>
-          support the{" "}
-          <span style={{ color: "#69AF85", fontWeight: "600" }}>nigerian</span>{" "}
-          way
-        </p>
+        <div className="sml-landing-caption">
+          <p className="show-love-text">
+            <b>Oga show love na!</b>
+          </p>
+          <p>
+            support the{" "}
+            <span style={{ color: "#69AF85", fontWeight: "600" }}>
+              nigerian
+            </span>{" "}
+            way
+          </p>
+        </div>
       </div>
 
       <p className="accept-donations-landing">
@@ -38,13 +42,15 @@ function HomeBody() {
         easier than you think.
       </p>
 
-      <div className="sml-startpage-input-container">
-        <span>
-          Show<b>Me</b>Love / &nbsp;
-        </span>
-        <input placeholder="username" className="startpage-input"></input>
+      <div className="smp-input-container">
+        <div className="sml-startpage-input-container">
+          <span>
+            Show<b>Me</b>Love / &nbsp;
+          </span>
+          <input placeholder="username" className="startpage-input"></input>
+        </div>
+        <button className="startpage-btn">Start My Page</button>
       </div>
-      <button className="startpage-btn">Start My Page</button>
     </div>
   );
 }

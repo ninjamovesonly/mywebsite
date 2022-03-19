@@ -2,9 +2,9 @@ import type { NextPage } from "next";
 import Head from "next/head";
 
 import { useAppContext } from "../context/state";
-import ShowMeLove from "../components/show-me-love";
+import ShowMeLoveMain from "../components/show-me-love";
 
-const Pomodoro: NextPage = () => {
+const ShowMelove: NextPage = () => {
   const { theme }: any = useAppContext();
 
   return (
@@ -16,10 +16,10 @@ const Pomodoro: NextPage = () => {
       </Head>
 
       <main className="sml-container">
-        <ShowMeLove />
+        <ShowMeLoveMain />
       </main>
     </div>
   );
 };
 
-export default Pomodoro;
+export default ShowMelove;

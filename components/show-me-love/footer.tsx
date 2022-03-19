@@ -1,5 +1,5 @@
 import { SmlFooterProps } from "../../types/show-me-love";
-import ProfileFooter from "./profile/footer";
+import ProfileFooter from "./profile/profile-footer";
 import WebsiteFooter from "../footer";
 
 function HomeFooter() {

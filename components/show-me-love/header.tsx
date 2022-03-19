@@ -1,5 +1,5 @@
 import { SmlHeaderProps } from "../../types/show-me-love";
-import ProfileHeader from "./profile/header";
+import ProfileHeader from "./profile/profile-header";
 
 function HomeHeader() {
   return (

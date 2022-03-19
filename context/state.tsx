@@ -12,7 +12,7 @@ const sharedState = {
     },
     {
       name: "Show me love - ",
-      route: "/showmelove",
+      route: "/showmelove/profile",
       description: "Support nigerian creatives",
     },
   ],

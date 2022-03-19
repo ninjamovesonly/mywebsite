@@ -98,6 +98,97 @@
   font-weight: 600;
 }
 
+.sml-home-container {
+  width: 100%;
+}
+
+.sml-header-container {
+  width: 100%;
+  padding: 2em;
+}
+
+.theidea-span {
+  float: right;
+  margin-top: 0.3em;
+}
+
+.sml-home-body-container {
+  padding: 2em;
+}
+
+.sml-logo-span {
+  font-size: 1.5em;
+}
+
+.app-for-designers {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.sml-landing-img-container {
+  width: 100%;
+  text-align: center;
+}
+
+.sml-landing-caption {
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.sml-landing-caption p {
+  margin: 0;
+}
+
+.sml-landing-caption p b {
+  margin-top: 10px;
+}
+
+.accept-donations-landing {
+  width: 100%;
+  text-align: center;
+  margin: 2em 0;
+}
+
+.show-love-text {
+  margin-top: 20px !important;
+}
+
+.startpage-input {
+  border: none;
+  background-color: #f0f0f0;
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 7em;
+}
+
+.startpage-input:focus {
+  outline: none;
+}
+
+.sml-startpage-input-container {
+  background-color: #f0f0f0;
+  padding: 1.5em;
+  border-radius: 5rem;
+  font-size: 1.2em;
+}
+
+.startpage-btn {
+  width: 100%;
+  border-radius: 5rem;
+  padding: 1.5em;
+  margin: 10px 0;
+  background-color: black;
+  color: white;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+.sml-home-footer {
+  width: 100%;
+  text-align: center;
+}
+
 @media (min-width: 700px) {
   .sml-body-layout {
     display: flex;

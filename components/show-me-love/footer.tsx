@@ -1,9 +1,15 @@
-export default function Footer() {
+import { SmlFooterProps } from "../../types/show-me-love";
+import ProfileFooter from "./profile/footer";
+import WebsiteFooter from "../footer";
+
+function HomeFooter() {
   return (
-    <footer className="sml-footer">
-      <a href="https://showmelove.ng/" target="_blank" rel="noreferrer">
-        create my show<b>me</b>love page
-      </a>
-    </footer>
+    <div className="sml-home-footer">
+      <WebsiteFooter page="others" />
+    </div>
   );
+}
+
+export default function Footer({ index }: SmlFooterProps) {
+  return index ? <HomeFooter /> : <ProfileFooter />;
 }

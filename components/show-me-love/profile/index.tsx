@@ -5,9 +5,9 @@ import Body from "../body";
 export default function ShowMeLove() {
   return (
     <>
-      <Header />
+      <Header index={false} />
       <Body />
-      <Footer />
+      <Footer index={false} />
     </>
   );
 }

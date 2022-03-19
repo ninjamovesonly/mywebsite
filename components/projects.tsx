@@ -1,6 +1,5 @@
 import { useAppContext } from "../context/state";
 import ProjectItem from "./project-item";
-import styles from "../styles/Home.module.css";
 
 export default function Projects() {
   const {
@@ -8,7 +7,7 @@ export default function Projects() {
   }: any = useAppContext();
 
   return (
-    <div className={styles["projects-container"]}>
+    <div className={`projects-container`}>
       <p>
         <u>Practice Projects</u>
       </p>

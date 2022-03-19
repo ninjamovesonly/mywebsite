@@ -10,6 +10,11 @@ const sharedState = {
       route: "/pomodoro",
       description: "Time your focus periods and short breaks",
     },
+    {
+      name: "Show me love - ",
+      route: "/showmelove/profile",
+      description: "Support nigerian creatives",
+    },
   ],
 };
 

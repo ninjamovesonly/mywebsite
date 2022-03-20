@@ -1,10 +1,17 @@
 import Image from "next/image";
+import toast, { Toaster } from "react-hot-toast";
 import ProfileBody from "./profile/profile-body";
 import { SmlBodyProps } from "../../types/show-me-love";
 
 function HomeBody() {
+  const handleClick = (e: any) => {
+    e.preventDefault();
+
+    toast("Still under development! Kindly check back tomorrow :)");
+  };
   return (
     <div className="sml-home-body-container">
+      <Toaster />
       <p className="app-for-designers">
         This App is designed for{" "}
         <b>
@@ -49,7 +56,9 @@ function HomeBody() {
           </span>
           <input placeholder="username" className="startpage-input"></input>
         </div>
-        <button className="startpage-btn">Start My Page</button>
+        <button className="startpage-btn" onClick={handleClick}>
+          Start My Page
+        </button>
       </div>
     </div>
   );

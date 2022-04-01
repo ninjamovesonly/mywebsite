@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { useAppContext } from "../context/state";
 import styles from "../styles/Home.module.css";
+import BgColorPicker from "./bg-color-picker";
 import ToggleSwitch from "./toggle";
 
 export default function HeaderContainer() {
@@ -11,6 +12,8 @@ export default function HeaderContainer() {
       <div className={styles["header-item"]}>
         <ToggleSwitch />
       </div>
+
+      <BgColorPicker />
 
       <div className={styles["header-item"]}>
         <span>

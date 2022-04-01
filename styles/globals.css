@@ -127,9 +127,21 @@ a {
   padding: 1em;
 }
 
+.color-picker-container {
+  position: absolute;
+  top: 7%;
+  left: 42%;
+  z-index: 1000;
+}
+
 @media (min-width: 700px) {
   .image-coverletter-container {
     display: flex;
+  }
+
+  .color-picker-container {
+    top: 11%;
+    left: 47.5%;
   }
 
   .image-coverletter-container .ic-first {

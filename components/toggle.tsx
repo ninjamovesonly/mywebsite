@@ -8,10 +8,8 @@ export default function ToggleSwitch() {
   const [themeOpposite, setThemeOpposite] = useState("");
 
   useEffect(() => {
-    setThemeOpposite(
-      (currentTheme) =>
-        (currentTheme =
-          theme === THEME_COLORS.light ? THEME_COLORS.dark : THEME_COLORS.light)
+    setThemeOpposite(() =>
+      theme === THEME_COLORS.light ? THEME_COLORS.dark : THEME_COLORS.light
     );
   }, [setThemeOpposite, theme]);
 

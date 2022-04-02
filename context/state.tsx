@@ -20,9 +20,12 @@ const sharedState = {
 
 export function AppWrapper({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState("light");
+  const [bgColor, setBgColor] = useState("inherit");
 
   return (
-    <AppContext.Provider value={{ sharedState, theme, setTheme }}>
+    <AppContext.Provider
+      value={{ sharedState, theme, setTheme, bgColor, setBgColor }}
+    >
       {children}
     </AppContext.Provider>
   );

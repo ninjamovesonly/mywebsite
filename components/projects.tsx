@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <div className={`projects-container`}>
       <p>
-        <u>Practice Projects</u>
+        <u>Projects</u>
       </p>
       {projects.map(({ name, route, description }: any) => {
         return (

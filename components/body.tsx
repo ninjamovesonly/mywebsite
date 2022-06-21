@@ -13,7 +13,7 @@ export default function Body() {
       <Projects />
       <Button
         label="resume / cv"
-        link="https://docs.google.com/document/d/e/2PACX-1vT4kIHTKYdu0ThfKOCxaifR8lTxYRoh9JBWU5KaCBhiqmr37Qxx0I3l6bcWboVHA1Yeq8RRntShQtf4/pub"
+        link="https://drive.google.com/file/d/13wkMe0JRYpnXpIEhSsQPZmVNNemQTR33/view?usp=sharing"
       />
     </section>
   );

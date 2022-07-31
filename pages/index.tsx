@@ -6,13 +6,10 @@ import HomeMain from "../components/home";
 import { useAppContext } from "../context/state";
 
 const Home: NextPage = () => {
-  const { theme, bgColor }: any = useAppContext();
+  const { theme }: any = useAppContext();
 
   return (
-    <div
-      style={{ backgroundColor: bgColor }}
-      className={`app-container ${theme}`}
-    >
+    <div className={`app-container ${theme}`}>
       <Head>
         <title>Nedu</title>
         <meta name="description" content="Ninja moves only" />

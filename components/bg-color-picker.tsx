@@ -7,7 +7,6 @@ export default function BgColorPicker() {
   const [picker, setPicker] = useState<boolean>(false);
 
   const selectColor = (color: any, e: any) => {
-    // e.preventDefault();
     setBgColor(color.hex);
   };
 

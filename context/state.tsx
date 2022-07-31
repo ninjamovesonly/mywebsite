@@ -1,4 +1,4 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
 
 const AppContext = createContext({});
 
@@ -49,12 +49,9 @@ const sharedState = {
 
 export function AppWrapper({ children }: { children: React.ReactNode }) {
   const [theme, setTheme] = useState("light");
-  const [bgColor, setBgColor] = useState("inherit");
 
   return (
-    <AppContext.Provider
-      value={{ sharedState, theme, setTheme, bgColor, setBgColor }}
-    >
+    <AppContext.Provider value={{ sharedState, theme, setTheme }}>
       {children}
     </AppContext.Provider>
   );

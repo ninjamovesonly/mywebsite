@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAppContext } from "../context/state";
-import MoreProjectDetaiksModal from "./more-project-details-modal";
+import MoreProjectDetailsModal from "./more-project-details-modal";
 import ProjectItem from "./project-item";
 
 export default function Projects() {
@@ -17,7 +17,7 @@ export default function Projects() {
   return (
     <>
       {showModal && selectedData.modalDescription && selectedData.route && (
-        <MoreProjectDetaiksModal
+        <MoreProjectDetailsModal
           selectedData={selectedData}
           setShowModal={() => {
             setShowModal("");

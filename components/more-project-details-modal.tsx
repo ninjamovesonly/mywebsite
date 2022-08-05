@@ -1,4 +1,4 @@
-export default function MoreProjectDetaiksModal({
+export default function MoreProjectDetailsModal({
   selectedData,
   setShowModal,
 }: any) {

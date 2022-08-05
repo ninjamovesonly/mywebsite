@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 export default function ProjectItem({ name, setShowModal, description }: any) {
   return (
     <>

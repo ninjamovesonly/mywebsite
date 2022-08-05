@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useAppContext } from "../context/state";
-import MoreProjectDetaiksModal from "./more-details-modal";
+import MoreProjectDetaiksModal from "./more-project-details-modal";
 import ProjectItem from "./project-item";
 
 export default function Projects() {

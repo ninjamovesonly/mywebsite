@@ -4,7 +4,7 @@ import styles from "../styles/Home.module.css";
 import ToggleSwitch from "./toggle";
 
 export default function HeaderContainer() {
-  const { theme }: any = useAppContext();
+  const { theme } = useAppContext();
 
   return (
     <section className={styles.header}>

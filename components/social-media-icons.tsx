@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useAppContext } from "../context/state";
 
 export default function SocialMediaIcons() {
-  const { theme }: any = useAppContext();
+  const { theme } = useAppContext();
 
   return (
     <div className="smi-container">

@@ -1,26 +1,48 @@
+import { useState } from "react";
 import { useAppContext } from "../context/state";
+import MoreProjectDetaiksModal from "./more-details-modal";
 import ProjectItem from "./project-item";
 
 export default function Projects() {
+  const [selectedData, setSelectedData] = useState<{
+    modalDescription: string;
+    route: string;
+  }>({ modalDescription: "", route: "" });
+  const [showModal, setShowModal] = useState<string>("");
+
   const {
     sharedState: { projects },
-  }: any = useAppContext();
+  } = useAppContext();
 
   return (
-    <div className={`projects-container`}>
-      <p>
-        <u>Projects</u>
-      </p>
-      {projects.map(({ name, route, description }: any) => {
-        return (
-          <ProjectItem
-            key={name}
-            name={name}
-            route={route}
-            description={description}
-          />
-        );
-      })}
-    </div>
+    <>
+      {showModal && selectedData.modalDescription && selectedData.route && (
+        <MoreProjectDetaiksModal
+          selectedData={selectedData}
+          setShowModal={() => {
+            setShowModal("");
+            setSelectedData({ modalDescription: "", route: "" });
+          }}
+        />
+      )}
+      <div className={`projects-container`}>
+        <p>
+          <u>Projects</u>
+        </p>
+        {projects.map(({ name, route, description, modalDescription }: any) => {
+          return (
+            <ProjectItem
+              key={name}
+              name={name}
+              description={description}
+              setShowModal={() => {
+                setShowModal(modalDescription);
+                setSelectedData({ modalDescription, route });
+              }}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 }

@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function ProjectItem({ name, route, description }: any) {
+export default function ProjectItem({ name, setShowModal, description }: any) {
   return (
     <>
-      <Link href={route} passHref>
+      <div onClick={() => setShowModal()}>
         <div className={`project-item-container`}>
           <span>
             <b>{name}</b>
@@ -11,7 +11,7 @@ export default function ProjectItem({ name, route, description }: any) {
           <span>{description}</span>
           <br />
         </div>
-      </Link>
+      </div>
     </>
   );
 }

@@ -6,9 +6,9 @@ export default function ImageSlider() {
     <div className={`${styles["slider-container"]} ic-first`}>
       <Image
         alt="photo from instagram api"
-        src="/img-mobile.png"
-        width={347.81}
-        height={182.95}
+        src="/newbgimg2.jpg"
+        width={310}
+        height={207}
       />
     </div>
   );

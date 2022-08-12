@@ -15,17 +15,22 @@ export default function MoreProjectDetailsModal({
         zIndex: "5",
       }}
     >
-      <p>{selectedData.modalDescription}</p>
-      <a href={selectedData.route}>
-        <u>Go to project</u>
-      </a>{" "}
-      <br />
-      <a
-        onClick={() => setShowModal()}
-        style={{ color: "red", cursor: "pointer" }}
-      >
-        close x
-      </a>
+      <div className="">
+        <div></div>
+        <div>
+          <p>{selectedData.modalDescription}</p>
+          <a href={selectedData.route}>
+            <u>Go to project</u>
+          </a>{" "}
+          <br />
+          <a
+            onClick={() => setShowModal()}
+            style={{ color: "red", cursor: "pointer" }}
+          >
+            close x
+          </a>
+        </div>
+      </div>
     </div>
   );
 }

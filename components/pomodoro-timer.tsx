@@ -1,18 +1,18 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState } from 'react';
 
-import ProgressBar from "./progress-bar";
-import StartPomodoroTimerButton from "./start-pomodoro-timer-button";
-import StopPomodoroTimerButton from "./stop-button";
-import { useAppContext } from "../context/state";
-import Pomodoro from "../lib/pomodoro-timer";
+import ProgressBar from './progress-bar';
+import StartPomodoroTimerButton from './start-pomodoro-timer-button';
+import StopPomodoroTimerButton from './stop-button';
+import { useAppContext } from '../context/state';
+import Pomodoro from '../lib/pomodoro-timer';
 
-import { POMODORO_TIME_STATUS, POMODORO_TIME_LABELS } from "../lib/consts";
+import { POMODORO_TIME_STATUS, POMODORO_TIME_LABELS } from '../lib/consts';
 
 export default function PomodoroTimer() {
   const [status, setStatus] = useState(POMODORO_TIME_STATUS.IDLE);
   const [label, setLabel] = useState(POMODORO_TIME_LABELS.START_TO_FOCUS);
   const [remainingMinute, setRemainingMinute] = useState<number | string>(25);
-  const [remainingSecond, setRemainingSecond] = useState<number | string>("00");
+  const [remainingSecond, setRemainingSecond] = useState<number | string>('00');
   const [startTime, setStartTime] = useState<number>(0);
   const [endTime, setEndTime] = useState<number>(0);
   const { theme }: any = useAppContext();
@@ -22,7 +22,7 @@ export default function PomodoroTimer() {
     setStatus(POMODORO_TIME_STATUS.IDLE);
     setLabel(POMODORO_TIME_LABELS.START_TO_FOCUS);
     setRemainingMinute(25);
-    setRemainingSecond("00");
+    setRemainingSecond('00');
   };
 
   const updateCountdown = (
@@ -64,6 +64,7 @@ export default function PomodoroTimer() {
 
           return pomodoro.pause();
         }
+        break;
       }
 
       case POMODORO_TIME_LABELS.CONTINUE: {
@@ -75,6 +76,7 @@ export default function PomodoroTimer() {
             updateCountdown(minute, second, start, end)
           );
         }
+        break;
       }
     }
   };

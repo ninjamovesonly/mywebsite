@@ -1,18 +1,18 @@
 export default function MoreProjectDetailsModal({
   selectedData,
-  setShowModal,
+  closeModal,
 }: any) {
   return (
     <div
       style={{
-        position: "fixed",
+        position: 'fixed',
         top: 0,
         left: 0,
-        background: "white",
-        width: "100%",
-        height: "100%",
-        padding: "2em",
-        zIndex: "5",
+        background: 'white',
+        width: '100%',
+        height: '100%',
+        padding: '2em',
+        zIndex: '5',
       }}
     >
       <div className="">
@@ -21,11 +21,11 @@ export default function MoreProjectDetailsModal({
           <p>{selectedData.modalDescription}</p>
           <a href={selectedData.route}>
             <u>Go to project</u>
-          </a>{" "}
+          </a>{' '}
           <br />
           <a
-            onClick={() => setShowModal()}
-            style={{ color: "red", cursor: "pointer" }}
+            onClick={() => closeModal()}
+            style={{ color: 'red', cursor: 'pointer' }}
           >
             close x
           </a>

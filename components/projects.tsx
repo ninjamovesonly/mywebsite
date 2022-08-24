@@ -1,14 +1,33 @@
-import { useState } from "react";
-import { useAppContext } from "../context/state";
-import MoreProjectDetailsModal from "./more-project-details-modal";
-import ProjectItem from "./project-item";
+import { useState } from 'react';
+import { useAppContext } from '../context/state';
+import MoreProjectDetailsModal from './more-project-details-modal';
+import ProjectItem from './project-item';
 
 export default function Projects() {
   const [selectedData, setSelectedData] = useState<{
-    modalDescription: string;
     route: string;
-  }>({ modalDescription: "", route: "" });
-  const [showModal, setShowModal] = useState<string>("");
+    details: {
+      jobTitle: string;
+      companyName: string;
+      from: string;
+      to: string;
+      months: string;
+      jobDescription: string;
+      screenshots: string[];
+    };
+  }>({
+    route: '',
+    details: {
+      jobTitle: '',
+      companyName: '',
+      from: '',
+      to: '',
+      months: '',
+      jobDescription: '',
+      screenshots: [],
+    },
+  });
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
 
   const {
     sharedState: { projects },
@@ -16,12 +35,23 @@ export default function Projects() {
 
   return (
     <>
-      {showModal && selectedData.modalDescription && selectedData.route && (
+      {isModalOpen && selectedData.details && selectedData.route && (
         <MoreProjectDetailsModal
           selectedData={selectedData}
-          setShowModal={() => {
-            setShowModal("");
-            setSelectedData({ modalDescription: "", route: "" });
+          closeModal={() => {
+            setIsModalOpen(false);
+            setSelectedData({
+              route: '',
+              details: {
+                jobTitle: '',
+                companyName: '',
+                from: '',
+                to: '',
+                months: '',
+                jobDescription: '',
+                screenshots: [],
+              },
+            });
           }}
         />
       )}
@@ -29,15 +59,15 @@ export default function Projects() {
         <p>
           <u>Projects</u>
         </p>
-        {projects.map(({ name, route, description, modalDescription }: any) => {
+        {projects.map(({ name, route, description, details }: any) => {
           return (
             <ProjectItem
               key={name}
               name={name}
               description={description}
-              setShowModal={() => {
-                setShowModal(modalDescription);
-                setSelectedData({ modalDescription, route });
+              openModal={() => {
+                setIsModalOpen(true);
+                setSelectedData({ route, details });
               }}
             />
           );

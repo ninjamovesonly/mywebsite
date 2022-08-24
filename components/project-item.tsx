@@ -1,7 +1,7 @@
-export default function ProjectItem({ name, setShowModal, description }: any) {
+export default function ProjectItem({ name, openModal, description }: any) {
   return (
     <>
-      <div onClick={() => setShowModal()}>
+      <div onClick={() => openModal()}>
         <div className={`project-item-container`}>
           <span>
             <b>{name}</b>

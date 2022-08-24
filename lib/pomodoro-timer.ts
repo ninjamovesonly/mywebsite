@@ -1,4 +1,4 @@
-import { DEFAULT_TIME_INTERVAL, HOUR, MINUTES, SECONDS } from "./consts";
+import { DEFAULT_TIME_INTERVAL, HOUR, MINUTES, SECONDS } from './consts';
 
 const DEFAULT_TIME = 25;
 
@@ -21,7 +21,7 @@ export default class PomodoroTimer {
     this._pausedAt = undefined;
     this._continuedAt = undefined;
     this._started = false;
-    this._status = "focus";
+    this._status = 'focus';
   }
 
   start(callback: (m: number, s: number, start: number, end: number) => void) {
@@ -40,6 +40,7 @@ export default class PomodoroTimer {
       this._minute = Math.floor((distance % HOUR) / MINUTES);
       this._second = Math.ceil((distance % MINUTES) / SECONDS);
 
+      // eslint-disable-next-line no-compare-neg-zero
       if (this._minute === -1 && this._second === -0) {
         callback(0, this._second, this._startTime, this._endTime);
         clearInterval(this._interval);

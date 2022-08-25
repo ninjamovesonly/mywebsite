@@ -1,5 +1,5 @@
-import Image from "next/image";
-import { useAppContext } from "../context/state";
+import Image from 'next/image';
+import { useAppContext } from '../context/state';
 
 export default function SocialMediaIcons() {
   const { theme } = useAppContext();
@@ -12,8 +12,9 @@ export default function SocialMediaIcons() {
         width={38.1}
         height={40}
         onClick={() => {
-          window.open("https://www.instagram.com/mrabalogu", "_blank")?.focus();
+          window.open('https://www.instagram.com/mrabalogu', '_blank')?.focus();
         }}
+        className="tw-cursor-pointer"
       />
       <Image
         alt="link to github"
@@ -21,8 +22,9 @@ export default function SocialMediaIcons() {
         width={38.1}
         height={40}
         onClick={() => {
-          window.open("https://github.com/chineduabalogu", "_blank")?.focus();
+          window.open('https://github.com/chineduabalogu', '_blank')?.focus();
         }}
+        className="tw-cursor-pointer"
       />
       <Image
         alt="link to twitter"
@@ -30,8 +32,9 @@ export default function SocialMediaIcons() {
         width={38.1}
         height={40}
         onClick={() => {
-          window.open("https://twitter.com/MrAbalogu_", "_blank")?.focus();
+          window.open('https://twitter.com/MrAbalogu_', '_blank')?.focus();
         }}
+        className="tw-cursor-pointer"
       />
       <Image
         alt="link to linkedin"
@@ -40,9 +43,10 @@ export default function SocialMediaIcons() {
         height={40}
         onClick={() => {
           window
-            .open("https://www.linkedin.com/in/chineduabalogu", "_blank")
+            .open('https://www.linkedin.com/in/chineduabalogu', '_blank')
             ?.focus();
         }}
+        className="tw-cursor-pointer"
       />
       <Image
         alt="link to mail"
@@ -50,8 +54,9 @@ export default function SocialMediaIcons() {
         width={38.1}
         height={40}
         onClick={() =>
-          (window.location.href = "mailto:chineduabalogu@gmail.com")
+          (window.location.href = 'mailto:chineduabalogu@gmail.com')
         }
+        className="tw-cursor-pointer"
       />
     </div>
   );

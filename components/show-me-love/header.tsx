@@ -1,5 +1,5 @@
-import { SmlHeaderProps } from "../../types/show-me-love";
-import ProfileHeader from "./profile/profile-header";
+import { SmlHeaderProps } from '../../types';
+import ProfileHeader from './profile/profile-header';
 
 function HomeHeader() {
   return (
@@ -12,8 +12,8 @@ function HomeHeader() {
         onClick={() =>
           window
             .open(
-              "https://docs.google.com/document/d/e/2PACX-1vSoDqG_HoTHfDnAo1YmwAms9yvnJ7cvHxkE5s94_dGiIT88Ma8y9gfBBxtcKKmrF7v_nHJ0QPuwfKpK/pub",
-              "_blank"
+              'https://docs.google.com/document/d/e/2PACX-1vSoDqG_HoTHfDnAo1YmwAms9yvnJ7cvHxkE5s94_dGiIT88Ma8y9gfBBxtcKKmrF7v_nHJ0QPuwfKpK/pub',
+              '_blank'
             )
             ?.focus()
         }

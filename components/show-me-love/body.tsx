@@ -1,22 +1,22 @@
-import Image from "next/image";
-import toast, { Toaster } from "react-hot-toast";
-import ProfileBody from "./profile/profile-body";
-import { SmlBodyProps } from "../../types/show-me-love";
+import Image from 'next/image';
+import toast, { Toaster } from 'react-hot-toast';
+import ProfileBody from './profile/profile-body';
+import { SmlBodyProps } from '../../types';
 
 function HomeBody() {
   const handleClick = (e: any) => {
     e.preventDefault();
 
-    toast("Still under development! Kindly check back tomorrow :)");
+    toast('Still under development! Kindly check back tomorrow :)');
   };
   return (
     <div className="sml-home-body-container">
       <Toaster />
       <p className="app-for-designers">
-        This App is designed for{" "}
+        This App is designed for{' '}
         <b>
           <u>creators</u>
-        </b>{" "}
+        </b>{' '}
         , not for businesses.
       </p>
 
@@ -35,10 +35,10 @@ function HomeBody() {
             <b>Oga show love na!</b>
           </p>
           <p>
-            support the{" "}
-            <span style={{ color: "#69AF85", fontWeight: "600" }}>
+            support the{' '}
+            <span style={{ color: '#69AF85', fontWeight: '600' }}>
               nigerian
-            </span>{" "}
+            </span>{' '}
             way
           </p>
         </div>

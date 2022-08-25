@@ -12,7 +12,9 @@ export default function SocialMediaIcons() {
         width={38.1}
         height={40}
         onClick={() => {
-          window.open('https://www.instagram.com/mrabalogu', '_blank')?.focus();
+          window
+            .open('https://www.instagram.com/mrabalogu', '_blank', 'noopener')
+            ?.focus();
         }}
         className="tw-cursor-pointer"
       />
@@ -22,7 +24,9 @@ export default function SocialMediaIcons() {
         width={38.1}
         height={40}
         onClick={() => {
-          window.open('https://github.com/chineduabalogu', '_blank')?.focus();
+          window
+            .open('https://github.com/chineduabalogu', '_blank', 'noopener')
+            ?.focus();
         }}
         className="tw-cursor-pointer"
       />
@@ -32,7 +36,9 @@ export default function SocialMediaIcons() {
         width={38.1}
         height={40}
         onClick={() => {
-          window.open('https://twitter.com/MrAbalogu_', '_blank')?.focus();
+          window
+            .open('https://twitter.com/MrAbalogu_', '_blank', 'noopener')
+            ?.focus();
         }}
         className="tw-cursor-pointer"
       />
@@ -43,7 +49,11 @@ export default function SocialMediaIcons() {
         height={40}
         onClick={() => {
           window
-            .open('https://www.linkedin.com/in/chineduabalogu', '_blank')
+            .open(
+              'https://www.linkedin.com/in/chineduabalogu',
+              '_blank',
+              'noopener'
+            )
             ?.focus();
         }}
         className="tw-cursor-pointer"

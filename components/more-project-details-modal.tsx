@@ -16,12 +16,6 @@ export default function MoreProjectDetailsModal({
           <u>Go to project</u>
         </a>{' '}
         <br />
-        <a
-          onClick={() => closeModal()}
-          style={{ color: 'red', cursor: 'pointer' }}
-        >
-          close x
-        </a>
       </div>
     </>
   );

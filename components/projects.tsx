@@ -57,7 +57,7 @@ export default function Projects() {
       )}
       <div className={`projects-container`}>
         <p>
-          <u>Projects</u>
+          <u>Projects & Experience</u>
         </p>
         {projects.map(({ name, route, description, details }: any) => {
           return (

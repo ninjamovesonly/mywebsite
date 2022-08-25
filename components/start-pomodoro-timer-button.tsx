@@ -1,6 +1,6 @@
-import Image from "next/image";
-import { PomodoroTimerButtonProps } from "../types/pomodoro-timer";
-import { POMODORO_TIME_LABELS } from "../lib/consts";
+import Image from 'next/image';
+import { PomodoroTimerButtonProps } from '../types';
+import { POMODORO_TIME_LABELS } from '../lib/consts';
 
 const Button = ({ theme, label, handleClick }: PomodoroTimerButtonProps) => {
   return (

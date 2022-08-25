@@ -1,21 +1,11 @@
 import { useState } from 'react';
 import { useAppContext } from '../context/state';
+import { SelectedDataType } from '../types';
 import MoreProjectDetailsModal from './more-project-details-modal';
 import ProjectItem from './project-item';
 
 export default function Projects() {
-  const [selectedData, setSelectedData] = useState<{
-    route: string;
-    details: {
-      jobTitle: string;
-      companyName: string;
-      from: string;
-      to: string;
-      months: string;
-      jobDescription: string;
-      screenshots: string[];
-    };
-  }>({
+  const [selectedData, setSelectedData] = useState<SelectedDataType>({
     route: '',
     details: {
       jobTitle: '',
@@ -35,7 +25,7 @@ export default function Projects() {
 
   return (
     <>
-      {isModalOpen && selectedData.details && selectedData.route && (
+      {isModalOpen && (
         <MoreProjectDetailsModal
           selectedData={selectedData}
           closeModal={() => {

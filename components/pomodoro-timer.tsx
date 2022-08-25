@@ -8,6 +8,8 @@ import Pomodoro from '../lib/pomodoro-timer';
 
 import { POMODORO_TIME_STATUS, POMODORO_TIME_LABELS } from '../lib/consts';
 
+const pomodoro = new Pomodoro();
+
 export default function PomodoroTimer() {
   const [status, setStatus] = useState(POMODORO_TIME_STATUS.IDLE);
   const [label, setLabel] = useState(POMODORO_TIME_LABELS.START_TO_FOCUS);
@@ -16,7 +18,6 @@ export default function PomodoroTimer() {
   const [startTime, setStartTime] = useState<number>(0);
   const [endTime, setEndTime] = useState<number>(0);
   const { theme }: any = useAppContext();
-  const pomodoro = useMemo(() => new Pomodoro(), []);
 
   const endTimer = () => {
     setStatus(POMODORO_TIME_STATUS.IDLE);

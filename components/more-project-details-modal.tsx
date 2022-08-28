@@ -19,6 +19,7 @@ export default function MoreProjectDetailsModal({
               backgroundImage:
                 "url('https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/modal-mobile-bg-img.png')",
               backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
               backgroundPosition: 'center',
               height: '250px',
               margin: 'auto',
@@ -30,6 +31,7 @@ export default function MoreProjectDetailsModal({
               backgroundImage:
                 "url('https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/modal-desktop-bg-img.png')",
               backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
               backgroundPosition: 'center',
               width: '500px',
             }}

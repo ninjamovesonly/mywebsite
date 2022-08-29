@@ -65,7 +65,7 @@ export default function MoreProjectDetailsModal({
                   paddingBottom: '3px',
                 }}
               >
-                {selectedData.details.from}
+                {selectedData.details.from} - {selectedData.details.to}
               </p>
               <small style={{ color: '#69af85', fontWeight: 'bold' }}>
                 {selectedData.details.months}

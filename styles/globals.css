@@ -43,6 +43,10 @@ a {
   box-sizing: border-box;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
 .app-container {
   width: 100%;
 }

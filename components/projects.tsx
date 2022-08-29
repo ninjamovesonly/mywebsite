@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useAppContext } from '../context/state';
 import { SelectedDataType } from '../types';
 import MoreProjectDetailsModal from './more-project-details-modal';
@@ -22,6 +22,14 @@ export default function Projects() {
   const {
     sharedState: { projects },
   } = useAppContext();
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isModalOpen]);
 
   return (
     <>

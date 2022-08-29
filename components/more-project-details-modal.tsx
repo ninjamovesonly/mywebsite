@@ -12,7 +12,7 @@ export default function MoreProjectDetailsModal({
     <>
       <div
         onClick={() => closeModal()}
-        className="tw-bg-black tw-opacity-80 tw-fixed tw-inset-0 tw-w-full tw-h-full tw-cursor-pointer"
+        className="tw-bg-black tw-opacity-80 tw-fixed tw-inset-0 tw-w-full tw-h-full tw-cursor-pointer tw-overflow-hidden"
       ></div>
       <div
         className={`${theme} tw-fixed md:tw-left-10 md:tw-top-10 tw-top-16 md:tw-right-10 tw-rounded-3xl tw-shadow-md tw-overflow-auto lg:tw-overflow-clip`}
@@ -26,7 +26,7 @@ export default function MoreProjectDetailsModal({
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
-              height: '250px',
+              height: '36vh',
               margin: 'auto',
             }}
           ></div>
@@ -42,7 +42,7 @@ export default function MoreProjectDetailsModal({
             }}
           ></div>
 
-          <div className="tw-p-2 lg:tw-p-10 lg:tw-flex-initial lg:tw-w-[900px] tw-h-[600px] tw-pb-[200px] lg:tw-h-full tw-overflow-auto">
+          <div className="tw-p-2 lg:tw-p-10 lg:tw-flex-initial lg:tw-w-[900px] tw-h-[88vh] tw-pb-[200px] lg:tw-h-full tw-overflow-auto">
             <h3 className="tw-font-bold tw-text-xl tw-pb-2">Summary</h3>
             <div
               onClick={() => {

@@ -3,7 +3,7 @@ import { createContext, useContext, useState } from 'react';
 const AppContext = createContext<any>({});
 
 const sharedState = {
-  coverLetter: `Nedu is a Full-stack software engineer that is very passionate about building products for the web, that solves real problems using javascript.\n He writes a lot of his web APIs with nodejs and client applications using reactjs prefferably with the nextjs library.\n He is currently part of the team that runs a software dev studio. You can view some devstack's works at`,
+  coverLetter: `Nedu is a Full-stack software engineer that is very passionate about building products for the web, that solves real problems using javascript.\n He writes a lot of his web APIs with nodejs and client applications using reactjs prefferrably with the nextjs library.\n He is currently part of the team that runs a software dev studio. You can view some devstack's works at`,
   projects: [
     {
       name: 'Show me love - personal - ',

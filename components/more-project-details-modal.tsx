@@ -1,17 +1,22 @@
 import { MoreDetailsModalProps } from '../types';
 import Screenshots from './screenshots';
+import { useAppContext } from '../context/state';
 
 export default function MoreProjectDetailsModal({
   selectedData,
   closeModal,
 }: MoreDetailsModalProps) {
+  const { theme } = useAppContext();
+
   return (
     <>
       <div
         onClick={() => closeModal()}
         className="tw-bg-black tw-opacity-80 tw-fixed tw-inset-0 tw-w-full tw-h-full tw-cursor-pointer"
       ></div>
-      <div className="tw-bg-white tw-fixed md:tw-left-10 md:tw-top-10 tw-top-16 md:tw-right-10 tw-rounded-3xl tw-shadow-md tw-overflow-auto lg:tw-overflow-clip">
+      <div
+        className={`${theme} tw-fixed md:tw-left-10 md:tw-top-10 tw-top-16 md:tw-right-10 tw-rounded-3xl tw-shadow-md tw-overflow-auto lg:tw-overflow-clip`}
+      >
         <div className="tw-block lg:tw-flex lg:tw-h-[600px]">
           <div
             className="tw-w-full lg:tw-hidden"
@@ -45,7 +50,7 @@ export default function MoreProjectDetailsModal({
                   .open(`${selectedData.route}`, '_blank', 'noopener')
                   ?.focus();
               }}
-              className="tw-p-3 tw-border tw-border-slate-200 tw-rounded-xl hover:tw-bg-slate-100 tw-cursor-pointer hover:tw-shadow-lg"
+              className="md-container tw-p-3 tw-border tw-border-slate-200 tw-rounded-xl hover:tw-bg-slate-100 tw-cursor-pointer hover:tw-shadow-lg"
             >
               <p>{selectedData.details.jobTitle}</p>
               <p>

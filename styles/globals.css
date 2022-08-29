@@ -53,7 +53,7 @@ a {
 }
 
 .dark {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.9);
   color: white;
 }
 
@@ -151,6 +151,11 @@ a {
   background-color: #ececec;
   border-radius: 5px;
   padding: 1em;
+  color: gray;
+}
+
+.md-container:hover {
+  color: gray;
 }
 
 .color-picker-container {

@@ -38,27 +38,41 @@ export default function MoreProjectDetailsModal({
           ></div>
 
           <div className="tw-p-2 lg:tw-p-10 lg:tw-flex-initial lg:tw-w-[900px] tw-h-[600px] tw-pb-[200px] lg:tw-h-full tw-overflow-auto">
-            <h3 className="tw-font-bold tw-text-2xl">Summary</h3>
-            <div className="">
-              <p>Full-stack developer II</p>
+            <h3 className="tw-font-bold tw-text-xl tw-pb-2">Summary</h3>
+            <div
+              onClick={() => {
+                window.open(
+                  `${selectedData.route}`,
+                  '_blank',
+                  'noopener',
+                  'noreferrer'
+                );
+              }}
+              className="tw-p-3 tw-border tw-border-slate-200 tw-rounded-xl hover:tw-bg-slate-100 tw-cursor-pointer hover:tw-shadow-lg"
+            >
+              <p>{selectedData.details.jobTitle}</p>
               <p>
-                <u>Mistho GMBH</u>
+                <u>
+                  <b>{selectedData.details.companyName}</b>
+                </u>
               </p>
-              <p>June 2021 - December 2021</p>
-              <p>7 months</p>
-              <hr />
-              <p>
-                Worked alongside 2 principal Engineers I reported to where I
-                engineered a scraper service using node to collect user’s
-                payroll data from payroll provider’s website, structuring,
-                persisting user’s salary data and making it available to be
-                consumed via a rest json api
+              <p
+                style={{
+                  lineHeight: '0',
+                  paddingTop: '10px',
+                  paddingBottom: '3px',
+                }}
+              >
+                {selectedData.details.from}
               </p>
-              <h3>Summary</h3>
-              <div className="tw-w-full">
-                <Screenshots />
-              </div>
+              <small style={{ color: '#69af85', fontWeight: 'bold' }}>
+                {selectedData.details.months}
+              </small>
+              <hr style={{ margin: '1em 0' }} />
+              <p className="tw-pb-5">{selectedData.details.jobDescription}</p>
             </div>
+            <h3 className="tw-font-bold tw-text-xl tw-p-2">Screenshots</h3>
+            <Screenshots screenshots={selectedData.details.screenshots} />
           </div>
         </div>
       </div>

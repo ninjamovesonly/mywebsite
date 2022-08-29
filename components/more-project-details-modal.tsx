@@ -41,12 +41,9 @@ export default function MoreProjectDetailsModal({
             <h3 className="tw-font-bold tw-text-xl tw-pb-2">Summary</h3>
             <div
               onClick={() => {
-                window.open(
-                  `${selectedData.route}`,
-                  '_blank',
-                  'noopener',
-                  'noreferrer'
-                );
+                window
+                  .open(`${selectedData.route}`, '_blank', 'noopener')
+                  ?.focus();
               }}
               className="tw-p-3 tw-border tw-border-slate-200 tw-rounded-xl hover:tw-bg-slate-100 tw-cursor-pointer hover:tw-shadow-lg"
             >

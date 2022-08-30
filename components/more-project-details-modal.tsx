@@ -43,7 +43,7 @@ export default function MoreProjectDetailsModal({
           ></div>
 
           <div className="tw-p-2 lg:tw-p-10 lg:tw-flex-initial lg:tw-w-[900px] tw-h-[88vh] tw-pb-[200px] lg:tw-h-full tw-overflow-auto">
-            <h3 className="tw-font-bold tw-text-xl tw-pb-2">Summary</h3>
+            <h3 className="tw-font-bold tw-text-xl tw-pb-2 tw-pl-2">Summary</h3>
             <div
               onClick={() => {
                 window

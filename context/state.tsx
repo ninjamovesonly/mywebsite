@@ -16,10 +16,7 @@ const sharedState = {
         to: 'Present',
         months: '2 months',
         jobDescription: 'Personal project',
-        screenshots: [
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-        ],
+        screenshots: [],
       },
     },
     {
@@ -35,10 +32,7 @@ const sharedState = {
         months: '1 month',
         jobDescription:
           'Supporting with the development of both the frontend web application and backend api in nodejs',
-        screenshots: [
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-        ],
+        screenshots: [],
       },
     },
     {
@@ -54,10 +48,7 @@ const sharedState = {
         months: '5 months',
         jobDescription:
           'Lead the development team of 3 Engineers for both the frontend react dapp client app and backend node api using a mongodb database',
-        screenshots: [
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-        ],
+        screenshots: [],
       },
     },
     {
@@ -72,10 +63,7 @@ const sharedState = {
         months: '2 years',
         jobDescription:
           'Devstack is a Software development Studio with a diverse team of product managers, mobile application developers, Financial experts, Full stack principal engineers and ui-ux designers.',
-        screenshots: [
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-        ],
+        screenshots: [],
       },
     },
     {
@@ -93,7 +81,6 @@ const sharedState = {
           'Worked alongside 2 principal Engineers I reported to where I engineered a scraper service using node to collect user’s payroll data from payroll provider’s website, structuring, persisting user’s salary data and making it available to be consumed via a rest json api',
         screenshots: [
           'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
         ],
       },
     },
@@ -110,10 +97,7 @@ const sharedState = {
         months: '2 years',
         jobDescription:
           'Worked alongside 2 principal Engineers I reported to where I engineered a scraper service using node to collect user’s payroll data from payroll provider’s website, structuring, persisting user’s salary data and making it available to be consumed via a rest json api',
-        screenshots: [
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-        ],
+        screenshots: [],
       },
     },
     {

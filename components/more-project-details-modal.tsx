@@ -17,7 +17,7 @@ export default function MoreProjectDetailsModal({
       <div
         className={`${theme} tw-fixed md:tw-left-10 md:tw-top-10 tw-top-16 md:tw-right-10 tw-rounded-3xl tw-shadow-md tw-overflow-auto lg:tw-overflow-clip`}
       >
-        <div className="tw-block lg:tw-flex lg:tw-h-[600px]">
+        <div className="tw-block lg:tw-flex lg:tw-h-[88vh]">
           <div
             className="tw-w-full lg:tw-hidden"
             style={{

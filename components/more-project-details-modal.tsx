@@ -15,7 +15,7 @@ export default function MoreProjectDetailsModal({
         className="tw-bg-black tw-opacity-80 tw-fixed tw-inset-0 tw-w-full tw-h-full tw-cursor-pointer tw-overflow-hidden"
       ></div>
       <div
-        className={`${theme} tw-fixed md:tw-left-10 md:tw-top-10 tw-top-16 md:tw-right-10 tw-rounded-3xl tw-shadow-md tw-overflow-auto lg:tw-overflow-clip`}
+        className={`${theme} tw-w-full md:tw-w-auto tw-fixed md:tw-left-10 md:tw-top-10 tw-top-16 md:tw-right-10 tw-rounded-3xl tw-shadow-md tw-overflow-auto lg:tw-overflow-clip`}
       >
         <div className="tw-block lg:tw-flex lg:tw-h-[88vh]">
           <div

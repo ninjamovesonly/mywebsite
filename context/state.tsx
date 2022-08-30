@@ -113,10 +113,7 @@ const sharedState = {
         months: '4 years',
         jobDescription:
           'Developed and managed internal resource web applications for business processes and website',
-        screenshots: [
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-        ],
+        screenshots: [],
       },
     },
     {
@@ -130,10 +127,7 @@ const sharedState = {
         to: 'null',
         months: 'null',
         jobDescription: 'null',
-        screenshots: [
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-          'https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/mistho-1.svg',
-        ],
+        screenshots: [],
       },
     },
   ],

@@ -39,7 +39,7 @@ const sharedState = {
       name: 'Takyon - ',
       route: 'https://takyon-frontend-staging.herokuapp.com/',
       description:
-        'Leading the development of both the frontend dapp app in react and backend api in nodejs',
+        'Lead the development of both the frontend dapp app in react and backend api in nodejs',
       details: {
         jobTitle: 'Software Developer',
         companyName: 'Takyon',

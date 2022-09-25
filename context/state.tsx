@@ -20,6 +20,50 @@ const sharedState = {
       },
     },
     {
+      name: 'Stealth - ',
+      route: 'https://artizans-app.herokuapp.com/',
+      description:
+        'Stealth company creating a plaform for skilled/handy workers, professionals, traders etc in Nigeria',
+      details: {
+        jobTitle: 'Co-Founder & CTO',
+        companyName: 'Stealth',
+        from: 'Jun 2022',
+        to: 'Present',
+        months: '2 months',
+        jobDescription: 'Personal project',
+        screenshots: [],
+      },
+    },
+    {
+      name: 'Benny Hotel - ',
+      route: 'https://www.bennyhotel.ng/',
+      description: 'Bed and Breakfast',
+      details: {
+        jobTitle: 'Director',
+        companyName: 'Benny Hotel',
+        from: 'From date of incorporation',
+        to: 'Present',
+        months: 'Years',
+        jobDescription: 'Personal project',
+        screenshots: [],
+      },
+    },
+    {
+      name: 'Filterland - ',
+      route: 'https://filterland.ng/',
+      description:
+        'The biggest manufacturers of Oil, Gas and Air filters in West Africa',
+      details: {
+        jobTitle: 'Director',
+        companyName: 'Filerland Industries',
+        from: 'From date of incorporation',
+        to: 'Present',
+        months: 'Years',
+        jobDescription: 'Personal project',
+        screenshots: [],
+      },
+    },
+    {
       name: 'NOX - ',
       route: 'https://nox-web.vercel.app/',
       description:
@@ -37,11 +81,11 @@ const sharedState = {
     },
     {
       name: 'Takyon - ',
-      route: 'https://takyon-frontend-staging.herokuapp.com/',
+      route: 'https://www.takyon.io/',
       description:
         'Lead the development of both the frontend dapp app in react and backend api in nodejs',
       details: {
-        jobTitle: 'Software Developer',
+        jobTitle: 'Software Developer - Contract',
         companyName: 'Takyon',
         from: 'Apr 2022',
         to: 'Aug 2022',
@@ -72,7 +116,7 @@ const sharedState = {
       description:
         'Core focus was on the backend in nodejs but also involved in some frontend tasks in react and reported to 2 principal engineers',
       details: {
-        jobTitle: 'Full-stack developer',
+        jobTitle: 'Full-stack developer - Contract',
         companyName: 'Mistho GMBH',
         from: 'Jun 2021',
         to: 'Dec 2021',

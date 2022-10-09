@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from 'react';
+import { monthDifference } from '../lib/util';
 
 const AppContext = createContext<any>({});
 
@@ -14,7 +15,7 @@ const sharedState = {
         companyName: 'ShowMeLove',
         from: 'Jun 2022',
         to: 'Present',
-        months: '2 months',
+        months: `${monthDifference(new Date(2022, 5), new Date())} months`,
         jobDescription: 'Personal project',
         screenshots: [],
       },
@@ -27,9 +28,9 @@ const sharedState = {
       details: {
         jobTitle: 'Co-Founder & CTO',
         companyName: 'Stealth',
-        from: 'Jun 2022',
+        from: 'Aug 2022',
         to: 'Present',
-        months: '2 months',
+        months: `${monthDifference(new Date(2022, 7), new Date())} months`,
         jobDescription: 'Personal project',
         screenshots: [],
       },
@@ -73,7 +74,7 @@ const sharedState = {
         companyName: 'Nox',
         from: 'Aug 2022',
         to: 'Present',
-        months: '1 month',
+        months: `${monthDifference(new Date(2022, 5), new Date())} months`,
         jobDescription:
           'Supporting with the development of both the frontend web application and backend api in nodejs',
         screenshots: [],
@@ -104,7 +105,7 @@ const sharedState = {
         companyName: 'Devstack',
         from: 'Jan 2021',
         to: 'Present',
-        months: '2 years',
+        months: `${monthDifference(new Date(2021, 0), new Date())} months`,
         jobDescription:
           'Devstack is a Software development Studio with a diverse team of product managers, mobile application developers, Financial experts, Full stack principal engineers and ui-ux designers.',
         screenshots: [],

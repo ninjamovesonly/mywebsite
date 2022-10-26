@@ -8,7 +8,7 @@ const sharedState = {
   projects: [
     {
       name: 'Show me love - personal - ',
-      route: '/showmelove/profile',
+      route: 'https://www.showmelove.ng/',
       description: 'Support nigerian creatives',
       details: {
         jobTitle: 'Personal Project',
@@ -45,7 +45,7 @@ const sharedState = {
         from: 'From date of incorporation',
         to: 'Present',
         months: 'Years',
-        jobDescription: 'Personal project',
+        jobDescription: 'Family business',
         screenshots: [],
       },
     },
@@ -53,14 +53,14 @@ const sharedState = {
       name: 'Filterland - ',
       route: 'https://filterland.ng/',
       description:
-        'The biggest manufacturers of Oil, Gas and Air filters in West Africa',
+        'Sole manufacturers of Oil, Gas and Air filters in West Africa',
       details: {
         jobTitle: 'Director',
         companyName: 'Filerland Industries',
         from: 'From date of incorporation',
         to: 'Present',
         months: 'Years',
-        jobDescription: 'Personal project',
+        jobDescription: 'Family business',
         screenshots: [],
       },
     },

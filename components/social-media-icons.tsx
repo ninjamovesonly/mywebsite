@@ -25,7 +25,7 @@ export default function SocialMediaIcons() {
         height={40}
         onClick={() => {
           window
-            .open('https://github.com/chineduabalogu', '_blank', 'noopener')
+            .open('https://github.com/ninjamovesonly', '_blank', 'noopener')
             ?.focus();
         }}
         className="tw-cursor-pointer"

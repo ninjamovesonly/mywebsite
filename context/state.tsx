@@ -162,6 +162,22 @@ const sharedState = {
       },
     },
     {
+      name: 'On Deck - ',
+      route: 'https://ondeck-react.vercel.app/',
+      description:
+        'Feature prototype figma design conversion to react',
+      details: {
+        jobTitle: 'React Dev',
+        companyName: 'On Deck',
+        from: 'Prototype',
+        to: 'Prototype',
+        months: 'Prototype',
+        jobDescription:
+          'Feature prototype figma design conversion to react',
+        screenshots: [],
+      },
+    },
+    {
       name: 'Pomodoro Timer - practice - ',
       route: '/pomodoro',
       description: 'Time your focus periods and short breaks',

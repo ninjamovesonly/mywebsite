@@ -21,13 +21,13 @@ const sharedState = {
       },
     },
     {
-      name: 'Stealth - ',
-      route: 'https://artizans-app.herokuapp.com/',
+      name: 'Artizan - ',
+      route: 'https://www.artizan.ng/',
       description:
-        'Stealth company creating a plaform for skilled/handy workers, professionals, traders etc in Nigeria',
+        'Innovating a digital plaform for skilled/handy workers, professionals, traders etc in Nigeria',
       details: {
-        jobTitle: 'Co-Founder & CTO',
-        companyName: 'Stealth',
+        jobTitle: 'Co-Founder & Lead Engineer',
+        companyName: 'Artizan',
         from: 'Aug 2022',
         to: 'Present',
         months: `${monthDifference(new Date(2022, 7), new Date())} months`,

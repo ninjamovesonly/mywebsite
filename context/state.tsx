@@ -98,7 +98,7 @@ const sharedState = {
     },
     {
       name: 'Devstack - ',
-      route: 'http://devstack.ng/',
+      route: 'https://devstack-dev.github.io/',
       description: 'Creative Director',
       details: {
         jobTitle: 'Creative Director',

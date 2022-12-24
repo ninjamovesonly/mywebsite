@@ -24,7 +24,7 @@ const sharedState = {
       name: 'Artizan - ',
       route: 'https://www.artizan.ng/',
       description:
-        'Innovating a digital plaform for skilled/handy workers, professionals, traders etc in Nigeria',
+        'On-demand digital plaform for skilled/handy workers, professionals, traders etc in Nigeria',
       details: {
         jobTitle: 'Co-Founder & Lead Engineer',
         companyName: 'Artizan',

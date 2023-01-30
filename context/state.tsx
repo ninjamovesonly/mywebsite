@@ -22,7 +22,7 @@ const sharedState = {
     },
     {
       name: 'Artizan - ',
-      route: 'https://www.artizan.ng/',
+      route: 'https://www.artizan.app/',
       description:
         'On-demand digital plaform for skilled/handy workers, professionals, traders etc in Nigeria',
       details: {
@@ -164,16 +164,14 @@ const sharedState = {
     {
       name: 'On Deck - ',
       route: 'https://ondeck-react.vercel.app/',
-      description:
-        'Feature prototype figma design conversion to react',
+      description: 'Feature prototype figma design conversion to react',
       details: {
         jobTitle: 'React Dev',
         companyName: 'On Deck',
         from: 'Prototype',
         to: 'Prototype',
         months: 'Prototype',
-        jobDescription:
-          'Feature prototype figma design conversion to react',
+        jobDescription: 'Feature prototype figma design conversion to react',
         screenshots: [],
       },
     },

@@ -15,7 +15,11 @@ export default function CoverLetter() {
       {coverLetter.split('\n').map((str: string) => (
         <p key={str}>{str}</p>
       ))}
-      <a href="http://devstack.ng" target="_blank" rel="noreferrer">
+      <a
+        href="https://devstack-dev.github.io/"
+        target="_blank"
+        rel="noreferrer"
+      >
         <b>
           <u>devstack.ng.</u>
         </b>

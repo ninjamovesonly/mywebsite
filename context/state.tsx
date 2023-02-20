@@ -36,35 +36,6 @@ const sharedState = {
       },
     },
     {
-      name: 'Benny Hotel - ',
-      route: 'https://www.bennyhotel.ng/',
-      description: 'Bed and Breakfast',
-      details: {
-        jobTitle: 'Director',
-        companyName: 'Benny Hotel',
-        from: 'From date of incorporation',
-        to: 'Present',
-        months: 'Years',
-        jobDescription: 'Family business',
-        screenshots: [],
-      },
-    },
-    {
-      name: 'Filterland - ',
-      route: 'https://filterland.ng/',
-      description:
-        'Sole manufacturers of Oil, Gas and Air filters in West Africa',
-      details: {
-        jobTitle: 'Director',
-        companyName: 'Filerland Industries',
-        from: 'From date of incorporation',
-        to: 'Present',
-        months: 'Years',
-        jobDescription: 'Family business',
-        screenshots: [],
-      },
-    },
-    {
       name: 'NOX - ',
       route: 'https://nox-web.vercel.app/',
       description:
@@ -186,6 +157,35 @@ const sharedState = {
         to: 'null',
         months: 'null',
         jobDescription: 'null',
+        screenshots: [],
+      },
+    },
+    {
+      name: 'Benny Hotel - ',
+      route: 'https://www.bennyhotel.ng/',
+      description: 'Bed and Breakfast',
+      details: {
+        jobTitle: 'Director',
+        companyName: 'Benny Hotel',
+        from: 'From date of incorporation',
+        to: 'Present',
+        months: 'Years',
+        jobDescription: 'Family business',
+        screenshots: [],
+      },
+    },
+    {
+      name: 'Filterland - ',
+      route: 'https://filterland.ng/',
+      description:
+        'Sole manufacturers of Oil, Gas and Air filters in West Africa',
+      details: {
+        jobTitle: 'Director',
+        companyName: 'Filerland Industries',
+        from: 'From date of incorporation',
+        to: 'Present',
+        months: 'Years',
+        jobDescription: 'Family business',
         screenshots: [],
       },
     },

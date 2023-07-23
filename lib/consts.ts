@@ -29,7 +29,7 @@ export const PROJECTS = {
   projects: [
     {
       name: 'Show me love - personal - ',
-      route: 'https://showmelove.vercel.app/',
+      route: 'https://showmelove.ng/',
       description: 'Support nigerian creatives',
       details: {
         jobTitle: 'Personal Project',

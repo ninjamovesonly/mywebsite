@@ -58,7 +58,7 @@ export const PROJECTS = {
     },
     {
       name: 'NOX - ',
-      route: 'https://nox-web.vercel.app/',
+      route: 'https://www.joinnox.com/',
       description:
         'Supporting with the development of both the frontend web application and backend api in nodejs',
       details: {

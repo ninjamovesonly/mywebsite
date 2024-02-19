@@ -1,3 +1,4 @@
+import { AnimationProps, motion } from 'framer-motion';
 import { MoreDetailsModalProps } from '../types';
 import Screenshots from './screenshots';
 import { useAppContext } from '../context/state';
@@ -7,6 +8,27 @@ export default function MoreProjectDetailsModal({
   closeModal,
 }: MoreDetailsModalProps) {
   const { theme } = useAppContext();
+  const variants: AnimationProps['variants'] = {
+    hidden: { y: '100px', opacity: 0 },
+    visible: {
+      y: '0',
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        damping: 25,
+        stiffness: 500,
+      },
+    },
+    exit: {
+      y: '100px',
+      opacity: 0,
+      transition: {
+        type: 'spring',
+        damping: 25,
+        stiffness: 500,
+      },
+    },
+  };
 
   return (
     <>
@@ -17,7 +39,13 @@ export default function MoreProjectDetailsModal({
       <div
         className={`${theme} tw-w-full md:tw-w-auto tw-fixed md:tw-left-10 md:tw-top-10 tw-top-16 md:tw-right-10 tw-rounded-3xl tw-shadow-md tw-overflow-auto lg:tw-overflow-clip`}
       >
-        <div className="tw-block lg:tw-flex lg:tw-h-[88vh]">
+        <motion.div
+          variants={variants}
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          className="tw-block lg:tw-flex lg:tw-h-[88vh]"
+        >
           <div
             className="tw-w-full lg:tw-hidden"
             style={{
@@ -76,7 +104,7 @@ export default function MoreProjectDetailsModal({
             <h3 className="tw-font-bold tw-text-xl tw-p-2">Screenshots</h3>
             <Screenshots screenshots={selectedData.details.screenshots} />
           </div>
-        </div>
+        </motion.div>
       </div>
     </>
   );

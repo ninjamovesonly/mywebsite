@@ -11,7 +11,6 @@ export default function CoverLetter() {
       <p>
         Chinedu <b>Prince</b> Abalogu
       </p>
-      <p>My name is John Abalogu</p>
       <br />
       {coverLetter.split('\n').map((str: string) => (
         <p key={str}>{str}</p>

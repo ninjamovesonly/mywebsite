@@ -32,7 +32,7 @@ export const PROJECTS = {
       route: 'https://mojo-merch.vercel.app/',
       description: 'Chop Life Crew',
       details: {
-        jobTitle: 'D',
+        jobTitle: 'Ninja',
         companyName: 'Chop Life Crew',
         from: 'Nov 2024',
         to: 'Present',

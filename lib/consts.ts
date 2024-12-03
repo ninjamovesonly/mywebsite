@@ -28,6 +28,20 @@ export const PROJECTS = {
   coverLetter: `Nedu is a Full-stack software engineer that is very passionate about building products for the web, that solves real problems using javascript.\n He writes a lot of his web APIs with nodejs and client applications using reactjs prefferrably with the nextjs library.\n He is currently part of the team that runs a software dev studio. You can view some devstack's works at`,
   projects: [
     {
+      name: 'Chop Life Crew - personal - ',
+      route: 'https://mojo-merch.vercel.app/',
+      description: 'Chop Life Crew',
+      details: {
+        jobTitle: 'D',
+        companyName: 'Chop Life Crew',
+        from: 'Nov 2024',
+        to: 'Present',
+        months: `${monthDifference(new Date(2024, 11), new Date())} months`,
+        jobDescription: 'Personal project',
+        screenshots: [],
+      },
+    },
+    {
       name: 'Show me love - personal - ',
       route: 'https://showmelove.vercel.app/',
       description: 'Support nigerian creatives',

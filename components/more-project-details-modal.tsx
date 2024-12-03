@@ -22,7 +22,7 @@ export default function MoreProjectDetailsModal({
             className="tw-w-full lg:tw-hidden"
             style={{
               backgroundImage:
-                "url('https://chineduabaloguswebsite.s3.eu-west-2.amazonaws.com/modal-mobile-bg-img.png')",
+                "url('https://images.unsplash.com/photo-1534972195531-d756b9bfa9f2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
               backgroundRepeat: 'no-repeat',
               backgroundSize: 'cover',
               backgroundPosition: 'center',

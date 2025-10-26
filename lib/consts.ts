@@ -28,6 +28,37 @@ export const PROJECTS = {
   coverLetter: `Nedu is a Full-stack software engineer that is very passionate about building products for the web, that solves real problems using javascript.\n He writes a lot of his web APIs with nodejs and client applications using reactjs prefferrably with the nextjs library.\n He is currently part of the team that runs a software dev studio. You can view some devstack's works at`,
   projects: [
     {
+      name: 'Ahịa - ',
+      route: 'https://nhia.ng/',
+      description:
+        'Ahịa streamlines storefronts, payouts, fulfillment, and AI insights so you can focus on customers - not admin. Automate the busy work and grow faster across every channel.',
+      details: {
+        jobTitle: 'Personal Project',
+        companyName: 'Ahịa',
+        from: 'Oct 2025',
+        to: 'Present',
+        months: `${monthDifference(new Date(2025, 9), new Date())} months`,
+        jobDescription: 'Personal project',
+        screenshots: [],
+      },
+    },
+    {
+      name: 'Benlock ERP - ',
+      route: 'https://benlockerp.vercel.app/',
+      description:
+        'Internal ERP Portal for Filterland and Benny Hotel. This is an internal ERP platform built and used in-house. It streamlines payroll, employee management, and Nigerian compliance for our organizations.',
+      details: {
+        jobTitle: 'Internal Product',
+        companyName: 'Filterland & Benny Hotel',
+        from: 'Oct 2025',
+        to: 'Present',
+        months: `${monthDifference(new Date(2025, 9), new Date())} months`,
+        jobDescription:
+          'In-house ERP platform streamlining payroll, employee management, and Nigerian compliance for our organizations',
+        screenshots: [],
+      },
+    },
+    {
       name: 'Chop Life Crew - personal - ',
       route: 'https://mojo-merch.vercel.app/',
       description: 'Chop Life Crew',
